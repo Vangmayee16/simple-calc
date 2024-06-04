@@ -1,0 +1,44 @@
+def add(A,B):     #This function is used for adding two numbers
+    return A+B
+def substract(A,B):    #This function is used for subtracting two numbers
+    return A-B
+def multiplication(A,B):    #This function is used for multiplication of two numbers
+    return A*B
+def division(A,B):
+    if num2==0:
+        print("Number cannot be divided by zero")
+    else:
+        return A/B
+    
+        
+
+
+print("Select the operation : ")  #input form user
+print(" 1 . Add")
+print(" 2 . Substaction")
+print(" 3 . Multiplication")
+print(" 4 . Division")
+
+select = input("Enter your choice : ") #user selects the operation
+
+num1 = float(input("Enter first number : "))
+num2 = float(input("Enter second number : "))
+
+if select == '1':                
+    c = num1 + num2         #Adding two numbers
+    print(num1 ,"+", num2, "=", c)         
+
+elif select == '2':
+    d = num1 - num2         #Substracting two numbers 
+    print(num1 ,"-", num2, "=", d)
+
+
+elif select == '3':
+    e = num1 * num2         #Multlipication of two numbers
+    print(num1 ,"*", num2, "=", e)
+
+elif select == '4':
+    print(num1 ,"/", num2, "=", division(num1,num2))
+
+else:
+    print("Enter the correct choice... ")
